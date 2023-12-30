@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My profile site</title>
+    <!-- main css file -->
+    <link rel="stylesheet" href="../Css/main.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Raleway:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesom file -->
+    <link rel="stylesheet" href="../Css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <video class="video-loop" autoplay loop muted>
+        <source src="../img/video-loop.mp4" type="video/mp4" />
+      </video>
+      <!-- Start Header  -->
+      <header class="header">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li><a class="navigation__links" href="#">Bio</a></li>
+            <li><a class="navigation__links" href="#">Skills</a></li>
+            <li><a href="#" class="navigation__links">Media</a></li>
+            <li><a href="#" class="navigation__links">Projects</a></li>
+            <li><a href="#" class="navigation__links">My clients</a></li>
+            <li><a href="#" class="navigation__links">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="switch">
+          <h3 class="switch__title">Switch Theme</h3>
+          <input
+            type="checkbox"
+            class="switch__checkbox"
+            name="Switch"
+            id="Switch"
+          />
+          <label for="Switch" class="switch__lable"></label>
+        </div>
+      </header>
+      <!-- End Header  -->
+
+      <!-- Start Bio  -->
+      <section class="section bio">
+        <div class="bio__text">
+          <h2 class="bio__title">
+            Hi There, I’M A Passionate Software Engineer
+          </h2>
+          <p class="bio__description">
+            My name is <span class="author">Mohamed Abusrea</span>, a co-founder
+            of
+            <a href="https://www.almdrasa.com/" class="almdrasa_link name"
+              >Almdrasa</a
+            >.com, Software Engineer and a content creator who publish content
+            on
+            <a href="https://www.facebook.com/" class="facebook_link name"
+              >Facebook</a
+            >,
+            <a
+              href="https://twitter.com/mohamed_abusrea"
+              class="Twitter_link name"
+              >Twitter</a
+            >,
+            <a
+              href="https://www.linkedin.com/in/mohamedabusrea/"
+              class="LinkedIn_link name"
+              >LinkedIn</a
+            >
+            and
+            <a
+              href="https://www.youtube.com/@MohamedAbusrea"
+              class="Youtube_link name"
+              >Youtube</a
+            >.
+          </p>
+          <div class="buttons">
+            <a href="#" class="Say link">Say Hi </a>
+            <a href="#" class="Cv link"
+              >Download CV
+              <i class="fa-solid fa-arrow-down arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bio_image">
+          <img class="pic" src="../img/personal-pic.png" alt="personal_image" />
+        </div>
+      </section>
+      <!-- End Bio  -->
+      <!--Start skills  -->
+      <section class="skills section section--with-bg">
+        <h2 class="h2_heading">Skills</h2>
+
+        <ul class="skills__list">
+          <li class="skills__title__content">
+            <h2 class="Head__li">HTML</h2>
+            <p class="description">8 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">CSS</h2>
+            <p class="description">8 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">Javascript</h2>
+            <p class="description">8 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">React</h2>
+            <p class="description">4 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">Redux</h2>
+            <p class="description">3 years</p>
+          </li>
+          <li class="skills__title__content">
+            <h2 class="Head__li">React teasting library</h2>
+            <p class="description">1 years</p>
+          </li>
+        </ul>
+      </section>
+      <!-- End skills -->
+      <!-- Start Media -->
+      <video
+        class="media"
+        max-width="100%"
+        poster="../img/thumbnail.jpg"
+        controls
+      >
+        <source src="../img/video.mp4" type="video/mp4" />
+        <source src="../img/video.mp4" type="video/ogg" />
+        this broweser doesn't suppor it
+      </video>
+      <!-- End Media -->
+
+      <!-- Start My projects -->
+      <section class="section">
+        <h2 class="h2_heading one-colum">
+          MY FEATURED <br />
+          PROJECTS
+        </h2>
+        <div class="main-projects">
+          <div class="Quran_tap img-one">
+            <img
+              class="img-projects"
+              src="../img/project-1.jpg"
+              alt="quran_tap_extention"
+            />
+          </div>
+          <div class="text">
+            <h2 class="heading2">Quran Tab Extension</h2>
+            <p class="description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <div class="links">
+              <a
+                href="https://chromewebstore.google.com/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd"
+                target="_blank"
+                class="chromelink link"
+                >Chrome Link</a
+              >
+              <a
+                href="https://microsoftedge.microsoft.com/addons/detail/quran-tab/hnfepfakgcalolgicjdfmaaellnondji"
+                target="_blank"
+                class="edgelink link"
+                >Edge Link</a
+              >
+            </div>
+          </div>
+          <div class="text">
+            <h2 class="heading2">Quran Station Extension</h2>
+            <p class="description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <div class="links">
+              <a
+                href="https://chromewebstore.google.com/detail/quran-tab/afaihcdgkjebgabomemccdneglknjkdd"
+                target="_blank"
+                class="chromelink link"
+                >Chrome Link</a
+              >
+              <a
+                href="https://microsoftedge.microsoft.com/addons/detail/quran-tab/hnfepfakgcalolgicjdfmaaellnondji"
+                target="_blank"
+                class="edgelink link"
+                >Edge Link</a
+              >
+              <a
+                href="https://addons.mozilla.org/en-US/firefox/addon/quran-station/"
+                class="firefox link"
+                target="_blank"
+                >Firefox Link</a
+              >
+            </div>
+          </div>
+          <div class="Quran_station">
+            <img
+              class="img-projects"
+              src="../img/project-2.jpg"
+              alt="quran_tap_extention"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- End My projects -->
+
+      <!-- Start Clients -->
+      <section id="clints" class="section section--with-bg">
+        <h2 class="h2_heading">
+          WHAT MY <br />
+          CLIENTS SAYS.
+        </h2>
+        <div class="slide">
+          <div class="clints_warrper">
+            <p class="says">
+              Abusrea has the advantageous ability to understand a problem and
+              implement code to a high standard within the deadline. Each
+              project we have worked on, I know I can completely trust Abusrea
+              to own his tasks and complete what is needed when asked of him.
+            </p>
+            <p class="says">
+              Mohamed will patiently listen to you and give you his own Ideas as
+              well, and in the end, he comes up with something completely
+              different from what you’re expecting, but the good news is, you’ll
+              always love it.
+            </p>
+            <p class="says">
+              I had a chance to work closely with Mohamed as a direct manager
+              from hist first day at DeliveryHero until my last day there
+              (6+months). Mohamed's biggest strengths that I admire are taking
+              initiatives on personal and team level, and driving them.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Clients -->
+    </div>
+  </body>
+</html>
