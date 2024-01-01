@@ -33,6 +33,7 @@
   --font-size-18: 1.8rem;
   --font-size-15: 1.5rem;
   --transition-timing: 0.3s;
+  --color-icons: #333;
 }
 
 * {
@@ -76,7 +77,6 @@ ol {
 
 a {
   text-decoration: none;
-  color: var(--color-black);
 }
 
 ul {
@@ -92,12 +92,10 @@ body,
 }
 
 /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕  */
-/* html {
-  font-size: 62.5%;
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 11rem;
-
-} */
+}
 /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
 /* End Rest styles */
 
@@ -170,10 +168,12 @@ textarea {
 }
 
 .container .header {
-  position: relative;
+  position: sticky;
   display: flex;
   justify-content: center;
   padding: 3rem 0;
+  top: 0px;
+  z-index: 99999;
 }
 
 .container .header::after {
@@ -191,6 +191,7 @@ textarea {
   justify-content: space-between;
   gap: 2rem;
   font-weight: var(--font-weight-medium);
+  color: var(--color-text);
 }
 
 .container .navigation .navigation__list li:hover .navigation__links {
@@ -203,6 +204,20 @@ textarea {
   gap: 1rem;
   margin-left: auto;
 }
+
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+.container:has(.bio:target) .navigation_bio,
+.container:has(.skills:target) .navigation_skills,
+.container:has(#Media:target) .navigation_Media,
+.container:has(#projects:target) .navigation_projects,
+.container:has(#clints:target) .navigation_clints,
+.container:has(#contact:target) .navigation_contact {
+  color: var(--color-blue);
+  text-decoration: underline;
+  font-weight: var(--font-weight-bold);
+  transition: 0.3s;
+}
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
 
 /* start switch */
 .switch__checkbox {
@@ -288,6 +303,9 @@ textarea {
   color: var(--color-red);
 }
 
+.author {
+  font-weight: var(--font-weight-bold);
+}
 .bio_image {
   /* Important 👌👌👌👌👌👌👌👌👌 */
   position: relative;
@@ -447,7 +465,7 @@ textarea {
 }
 
 .fa-brands {
-  color: #333;
+  color: var(--color-icons);
 }
 
 .Socila {
@@ -465,16 +483,16 @@ textarea {
 }
 input[type="text"],
 input[type="tel"] {
-  flex-basis: 100%;
+  flex: 1;
   background-color: transparent;
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 0.1rem solid var(--color-black);
 }
 
 textarea {
   width: 100%;
   height: 40px;
   background-color: transparent;
-  border-bottom: 1px solid var(--color-black);
+  border-bottom: 0.1rem solid var(--color-black);
   margin-bottom: 3.4rem;
 }
 .sub {
@@ -492,3 +510,29 @@ textarea {
   color: var(--color-red);
 }
 /* End contact*/
+
+/* Start footer*/
+footer {
+  border-top: 1px solid var(--color-black);
+  padding: 1rem 0;
+  font-size: var(--font-size-15);
+}
+/* End footer*/
+
+/* Start dark theme  */
+
+/* 👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌 */
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+
+html:has(.switch__checkbox:checked) {
+  --color-background: var(--color-black);
+  --color-text: var(--color-white);
+  --color-box-img: var(--color-green);
+  --color-link-bg: var(--color-green);
+  --color-grey: #080800;
+  --color-input-border: var(--color-white);
+  --color-icons: var(--color-white);
+}
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+/* 👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌 */
+/* End dark theme  */
