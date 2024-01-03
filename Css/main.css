@@ -463,6 +463,7 @@ textarea {
 }
 
 .fa-brands {
+  font-size: 25px;
   color: var(--color-icons);
 }
 
@@ -511,7 +512,7 @@ textarea {
 
 /* Start footer*/
 footer {
-  border-top: 1px solid var(--color-black);
+  border-top: 1px solid var(--color-text);
   padding: 1rem 0;
   font-size: var(--font-size-15);
 }
@@ -524,6 +525,7 @@ footer {
 
 html:has(.switch__checkbox:checked) {
   --color-background: var(--color-black);
+  --color-text: var(--color-white);
   --color-text: var(--color-white);
   --color-box-img: var(--color-green);
   --color-link-bg: var(--color-green);
