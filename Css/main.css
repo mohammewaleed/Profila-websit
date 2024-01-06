@@ -170,6 +170,7 @@ textarea {
   position: sticky;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 3rem 0;
   top: 0px;
   z-index: 99999;
@@ -186,11 +187,21 @@ textarea {
   z-index: -1;
 }
 
+.navigation .fa-bars {
+  display: none;
+}
 .container .navigation .navigation__list {
   display: flex;
   gap: 2rem;
 }
 
+.fa-bars {
+  display: none;
+}
+
+.burger_check {
+  display: none;
+}
 .container .navigation .navigation__list li:hover .navigation__links {
   text-decoration: underline;
   transition: 0.3s;
@@ -217,6 +228,7 @@ textarea {
 /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
 
 /* start switch */
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
 .switch__checkbox {
   display: none;
 }
@@ -256,6 +268,8 @@ textarea {
   border-radius: 50%;
   transition: 0.3s;
 }
+
+/* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
 
 /* End switch */
 
@@ -484,15 +498,17 @@ input[type="text"],
 input[type="tel"] {
   flex: 1;
   background-color: transparent;
-  border-bottom: 0.1rem solid var(--color-black);
+  border-bottom: 0.1rem solid var(--color-text);
+  color: var(--color-text);
 }
 
 textarea {
   width: 100%;
   height: 40px;
   background-color: transparent;
-  border-bottom: 0.1rem solid var(--color-black);
+  border-bottom: 0.1rem solid var(--color-text);
   margin-bottom: 3.4rem;
+  color: var(--color-text);
 }
 .sub {
   background-color: var(--color-link-bg);
@@ -525,7 +541,6 @@ footer {
 
 html:has(.switch__checkbox:checked) {
   --color-background: var(--color-black);
-  --color-text: var(--color-white);
   --color-text: var(--color-white);
   --color-box-img: var(--color-green);
   --color-link-bg: var(--color-green);
@@ -591,5 +606,45 @@ html:has(.switch__checkbox:checked) {
 
 /* Mobail */
 @media (max-width: 500px) {
+  /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.75rem;
+  }
+  .bar {
+    width: 4.375rem;
+    height: 0.3rem;
+    background-color: var(--color-text);
+    transition: var(--transition-timing);
+  }
+  .header:has(.burger_check:checked) .bar:nth-child(1) {
+    transform: translateY(10px) rotate(40deg);
+  }
+  .header:has(.burger_check:checked) .bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header:has(.burger_check:checked) .bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+
+  .burger_check:checked + .navigation {
+    top: 100%;
+  }
+  .container .navigation {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-background);
+    width: 100vw;
+    top: 0;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--color-text);
+    z-index: -2;
+    transition: var(--transition-timing);
+  }
+  /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
 }
 /* End Responive */
