@@ -52,7 +52,7 @@ ul {
 }
 
 body,
-[type="submit"] {
+[type=submit] {
   font-size: 1.6rem;
   font-family: var(--font-family-raleway);
   background-color: var(--color-background);
@@ -278,7 +278,7 @@ textarea {
 /* End Header */
 .bio {
   -moz-column-gap: 7.4rem;
-  column-gap: 7.4rem;
+       column-gap: 7.4rem;
   row-gap: 0;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -413,13 +413,9 @@ textarea {
   min-width: 100%;
 }
 
-.media__video {
-  max-width: 100%;
-}
-
 .main-projects {
   -moz-column-gap: 7.4rem;
-  column-gap: 7.4rem;
+       column-gap: 7.4rem;
   row-gap: 7.5rem;
   grid-template-columns: repeat(2, 1fr);
   display: grid;
@@ -462,7 +458,7 @@ textarea {
 
 .con {
   -moz-column-gap: 20rem;
-  column-gap: 20rem;
+       column-gap: 20rem;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 }
@@ -502,8 +498,8 @@ textarea {
   margin-bottom: 4rem;
 }
 
-input[type="text"],
-input[type="tel"] {
+input[type=text],
+input[type=tel] {
   flex: 1;
   background-color: transparent;
   border-bottom: 0.1rem solid var(--color-text);
@@ -637,4 +633,4 @@ html:has(.switch__checkbox:checked) {
     transition: var(--transition-timing);
   }
   /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
