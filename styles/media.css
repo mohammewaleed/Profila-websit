@@ -2,9 +2,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-}
-.Media {
-  max-width: 100%;
-}
-/*# sourceMappingURL=media.css.map */
+  min-width: 100%;
+}/*# sourceMappingURL=media.css.map */
