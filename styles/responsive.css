@@ -11,9 +11,6 @@
   .section {
     grid-template-columns: 1fr;
   }
-  .media {
-    max-width: 100%;
-  }
   .bio_image {
     grid-row: 1;
     justify-self: center;
@@ -81,4 +78,4 @@
     transition: var(--transition-timing);
   }
   /* 🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕🆕 */
-}/*# sourceMappingURL=responsive.css.map */
+} /*# sourceMappingURL=responsive.css.map */

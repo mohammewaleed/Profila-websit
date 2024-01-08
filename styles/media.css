@@ -2,5 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100%;
-}/*# sourceMappingURL=media.css.map */
+  max-width: 100%;
+}
+.Media {
+  max-width: 100%;
+}
+/*# sourceMappingURL=media.css.map */
